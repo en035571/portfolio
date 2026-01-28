@@ -34,7 +34,7 @@ export default function Sidebar({
                                     height={80}
                                     className="w-20 h-20 object-contain"
                                   />
-                </div>div>
+                </div>
           
             {/* Filters */}
                 <div className="px-6 flex-1">
@@ -42,7 +42,7 @@ export default function Sidebar({
                         <div className="mb-8">
                                   <h3 className="text-xs font-medium tracking-wide text-gray-500 dark:text-gray-400 mb-3">
                                               Project Types
-                                  </h3>h3>
+                                  </h3>
                                   <div className="space-y-0.5">
                                     {projectTypes.map((type) => {
                           const isActive = selectedTypes.includes(type);
@@ -61,17 +61,17 @@ export default function Sidebar({
                                                                                                                                                 `}
                                                               >
                                               {type}
-                                            </button>button>
+                                            </button>
                                           );
           })}
-                                  </div>div>
-                        </div>div>
+                                  </div>
+                        </div>
                 
                   {/* Sort */}
                         <div className="mb-8">
                                   <h3 className="text-xs font-medium tracking-wide text-gray-500 dark:text-gray-400 mb-3">
                                               Sort
-                                  </h3>h3>
+                                  </h3>
                                   <div className="space-y-0.5">
                                               <button
                                                               onClick={() => onSortChange("oldest")}
@@ -86,7 +86,7 @@ export default function Sidebar({
                                                                                                                               `}
                                                             >
                                                             Oldest-New
-                                              </button>button>
+                                              </button>
                                               <button
                                                               onClick={() => onSortChange("newest")}
                                                               className={`
@@ -100,10 +100,10 @@ export default function Sidebar({
                                                                                                                               `}
                                                             >
                                                             Newest-Old
-                                              </button>button>
-                                  </div>div>
-                        </div>div>
-                </div>div>
+                                              </button>
+                                  </div>
+                        </div>
+                </div>
           
             {/* Social Links */}
                 <div className="px-6 py-4 space-y-1 text-xs text-gray-500 dark:text-gray-400">
@@ -115,7 +115,7 @@ export default function Sidebar({
                                     className="block hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
                                   >
                                   instagram: {siteConfig.instagram}
-                      </a>a>
+                      </a>
                         )}
                   {siteConfig.email && (
                       <a
@@ -123,14 +123,10 @@ export default function Sidebar({
                                     className="block hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
                                   >
                                   email: {siteConfig.email}
-                      </a>a>
+                      </a>
                         )}
-                </div>div>
+                </div>
           
-            {/* Copyright */}
-                <div className="px-6 py-4 text-[10px] text-gray-400 dark:text-gray-500">
-                        Copyright © {siteConfig.copyrightYear} by {siteConfig.name}. All rights reserved.
-                </div>div>
-          </aside>aside>
+          </aside>
         );
 }</aside>
